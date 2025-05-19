@@ -1,0 +1,273 @@
+
+
+
+.nordic {
+/* === Nord Theme === */
+/* --> Polar Night */
+--nord0: #2a313e;
+--nord1: #383f4f;
+--nord2: #434C5E;
+--nord3: #4C566A;
+/* --> Snow Storm */
+--nord4: #D8DEE9;
+--nord5: #E5E9F0;
+--nord6: #d1d4db;
+--nord666: #b6bdc9;
+/* --> Frost */
+--nord7: #8FBCBB;
+--nord8: #88C0DD;
+--nord9: #81A1C1;
+--nord10: #5E81AC;
+/* --> Aurora */
+--nord11: #BF616A;
+--nord12: #D08770;
+--nord13: #EBCB8B;
+--nord14: #A3BE8C;
+--nord15: #B48EAD;
+
+
+--nord16: #505661;
+
+--nord17:#dcf7e4;
+--nord18:#2c3553;
+--nord19:#5a6d94;
+--nord20:#c6e5f0;
+--nord21:#9fa1b8;
+--nord22:#6e738d;
+
+/* Both variants should be consistent between them. */
+--bg: var(--nord0);
+--fg: var(--nord666);
+
+--sidebar-bg: var(--nord1);
+--sidebar-fg: var(--nord8);
+--sidebar-non-existant: var(--nord22);
+--sidebar-active: var(--nord9);
+--sidebar-spacer: var(--nord3);
+
+--scrollbar: var(--nord8);
+
+--icons: var(--nord7);
+--icons-hover: var(--nord22);
+
+--links: var(--nord9);
+
+--inline-code-color: var(--nord3);
+
+--theme-popup-bg: var(--nord3);
+--theme-popup-border: var(--nord0);
+--theme-hover: #3B4252;
+
+--quote-bg: var(--nord3);
+--quote-border: var(--nord0);
+
+--table-border-color: var(--nord1);
+--table-header-bg: var(--nord2);
+--table-alternate-bg: var(--nord1);
+--warning-border: #ff8e00;
+
+
+--searchbar-border-color: var(--nord0);
+--searchbar-bg: var(--nord3);
+--searchbar-fg: var(--nord4);
+--searchbar-shadow-color: var(--nord0);
+--searchresults-header-fg: var(--nord4);
+--searchresults-border-color: var(--nord0);
+--searchresults-li-bg: var(--nord3);
+--search-mark-bg: var(--nord8);
+
+--color-scheme: dark;
+
+
+}
+
+/* .nordic code {
+
+  background: var(--nord10);
+  
+} */
+
+
+.nordic kbd {
+  background: var(--nord3);
+  border: var(--nord16) solid 0.1em;
+}
+
+.nordic blockquote {
+  margin: 20px 0;
+  padding: 0 20px;
+  color: var(--nord4);
+  background-color: var(--quote-bg);
+  border-block-start: .001em solid var(--quote-border);
+  border-block-end: .001em solid var(--quote-border);
+  border-left: 0.25em solid;
+  border-radius: 2px 0px 0px 2px;
+  border-left-color: var(--nord7);
+  
+  
+}
+
+.nordic blockquote blockquote {
+  margin: 20px 0;
+  padding: 0 20px;
+  color: var(--nord4);
+  background-color: var(--quote-bg);
+  border-block-start: .001em solid var(--quote-border);
+  border-block-end: .001em solid var(--quote-border);
+  border-left: 0.25em solid;
+  border-radius: 2px 0px 0px 2px;
+  background: var(--nord2);
+  border-left-color: var(--nord7);
+  
+
+}
+
+
+ /* .nordic pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}  */
+
+
+.nordic code.hljs {
+  padding: 3px 5px
+}
+
+
+
+.nordic .hljs {
+  color: #E5E9F0;
+  /* background: #2E3440 */
+  background: var(--nord1);
+}
+
+
+.nordic .hljs::selection,
+.nordic .hljs ::selection {
+  background-color: #434C5E;
+  color: #E5E9F0
+}
+
+/* purposely do not highlight these things */
+.nordic .hljs-formula,
+.nordic .hljs-params,
+.nordic .hljs-property {}
+
+/* base03 - #4C566A -  Comments, Invisibles, Line Highlighting */
+/* .nordic .hljs-comment {
+  color: #4C566A} */
+.nordic .hljs-comment {
+  color: #7584a3
+}
+
+/* base04 - #D8DEE9 -  Dark Foreground (Used for status bars) */
+.nordic .hljs-tag {
+  color: #D8DEE9
+}
+
+/* base05 - #E5E9F0 -  Default Foreground, Caret, Delimiters, Operators */
+.nordic .hljs-subst,
+.nordic .hljs-punctuation,
+.nordic .hljs-operator {
+  color: #E5E9F0
+}
+
+.nordic .hljs-operator {
+  opacity: 0.7
+}
+
+/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+.nordic .hljs-bullet,
+.nordic .hljs-variable,
+.nordic .hljs-template-variable,
+.nordic .hljs-selector-tag,
+.nordic .hljs-name,
+.nordic .hljs-deletion {
+  color: #BF616A
+}
+
+/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */
+.nordic .hljs-symbol,
+.nordic .hljs-number,
+.nordic .hljs-link,
+.nordic .hljs-attr,
+.nordic .hljs-variable.constant_,
+.nordic .hljs-literal {
+  /* color: #D08770 */
+  color: var(--nord13);
+}
+
+/* base0A - Classes, Markup Bold, Search Text Background */
+.nordic .hljs-title,
+.nordic .hljs-class .hljs-title,
+.nordic .hljs-title.class_ {
+  color: #EBCB8B
+}
+
+.nordic .hljs-strong {
+  font-weight: bold;
+  color: #EBCB8B
+}
+
+/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */
+.nordic .hljs-code,
+.nordic .hljs-addition,
+.nordic .hljs-title.class_.inherited__,
+.nordic .hljs-string {
+  color: #A3BE8C
+}
+
+/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */
+/* guessing */
+.nordic .hljs-built_in,
+.nordic .hljs-doctag,
+.nordic .hljs-quote,
+.nordic .hljs-keyword.hljs-atrule,
+.nordic .hljs-regexp {
+  color: #88C0D0
+}
+
+/* base0D - Functions, Methods, Attribute IDs, Headings */
+.nordic .hljs-function .hljs-title,
+.nordic .hljs-attribute,
+.nordic .ruby .hljs-property,
+.nordic .hljs-title.function_,
+.nordic .hljs-section {
+  color: #81A1C1
+}
+
+/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */
+/* .hljs-selector-id, */
+/* .hljs-selector-class, */
+/* .hljs-selector-attr, */
+/* .hljs-selector-pseudo, */
+.nordic .hljs-type,
+.nordic .hljs-template-tag,
+.nordic .diff .hljs-meta,
+.nordic .hljs-keyword {
+  color: #B48EAD
+}
+
+.nordic .hljs-emphasis {
+  color: #B48EAD;
+  font-style: italic
+}
+
+/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */
+/*
+  prevent top level .keyword and .string scopes
+  from leaking into meta by accident
+*/
+.nordic .hljs-meta,
+.nordic .hljs-meta .hljs-keyword,
+.nordic .hljs-meta .hljs-string {
+  color: #5E81AC
+}
+
+/* for v10 compatible themes */
+.nordic .hljs-meta .hljs-keyword,
+.hljs-meta-keyword {
+  font-weight: bold
+}
+
